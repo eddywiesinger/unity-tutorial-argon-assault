@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FragmentExplosion : MonoBehaviour
 {
-    [SerializeField] float fragmentsExplosionTranslationFactor = 3f;
+    [SerializeField] float fragmentsExplosionTranslationFactor = 5f;
     [SerializeField] float fragmentsExplosionRotationFactor = 2f;
 
     float xDtAngle, yDtAngle, zDtAngle;
@@ -17,24 +17,26 @@ public class FragmentExplosion : MonoBehaviour
     private void Start()
     {
         xDtAngle = Random.Range(0f, 1f) - 0.5f;
-        xDtAngle = xDtAngle * fragmentsExplosionRotationFactor;
         yDtAngle = Random.Range(0f, 1f) - 0.5f;
-        yDtAngle = yDtAngle * fragmentsExplosionRotationFactor;
         zDtAngle = Random.Range(0f, 1f) - 0.5f;
-        zDtAngle = zDtAngle * fragmentsExplosionRotationFactor;
+
+        xDtAngle *= fragmentsExplosionRotationFactor;
+        yDtAngle *= fragmentsExplosionRotationFactor;
+        zDtAngle *= fragmentsExplosionRotationFactor;
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 normalizedVector = Vector3.Normalize(transform.localPosition);
-        transform.localPosition += normalizedVector * Time.deltaTime * fragmentsExplosionTranslationFactor;
+        transform.localPosition += normalizedVector * fragmentsExplosionTranslationFactor * Time.deltaTime;
+    }
 
-        // TODO: Modular Skript für jedes ShipFragment und hier nur starten
+    void FixedUpdate() {
         Vector3 rot = new Vector3(
-            transform.localEulerAngles.x + xDtAngle,
-            transform.localEulerAngles.y + yDtAngle,
-            transform.localEulerAngles.z + zDtAngle);
+                    transform.localEulerAngles.x + xDtAngle,
+                    transform.localEulerAngles.y + yDtAngle,
+                    transform.localEulerAngles.z + zDtAngle);
         transform.localEulerAngles = rot;
     }
 }
