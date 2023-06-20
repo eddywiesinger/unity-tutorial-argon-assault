@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 6375547712658307847}
   - component: {fileID: 9195938760026329037}
   - component: {fileID: 2403367846499748538}
+  - component: {fileID: 6804971908329865219}
   m_Layer: 0
   m_Name: Annoyer
   m_TagString: Untagged
@@ -777,9 +778,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitVFX: {fileID: 3283942084272658810, guid: 3f0f6be197a7fbf4cadb9dcf2cfd6d5b, type: 3}
   deathVFX: {fileID: 3345770315677194374, guid: 24a86c9cf96b7aa49a87aaf8671ab969, type: 3}
-  parent: {fileID: 0}
+  parentGameObject: {fileID: 0}
   hitPoints: 15
   hitScore: 80
+--- !u!65 &6804971908329865219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7250362073454095896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.8, y: 3.86, z: 15.6523485}
+  m_Center: {x: -0.000007629394, y: -0.35340485, z: 6.083849e-14}
 --- !u!1 &7962823115939924718
 GameObject:
   m_ObjectHideFlags: 0

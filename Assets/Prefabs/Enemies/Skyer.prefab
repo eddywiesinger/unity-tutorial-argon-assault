@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 1653766201458412197}
   - component: {fileID: 1646161906119740941}
   - component: {fileID: 2998269534641149292}
+  - component: {fileID: 8077873625330220367}
   m_Layer: 0
   m_Name: Skyer
   m_TagString: Untagged
@@ -234,9 +235,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitVFX: {fileID: 3283942084272658810, guid: 3f0f6be197a7fbf4cadb9dcf2cfd6d5b, type: 3}
   deathVFX: {fileID: 3345770315677194374, guid: 24a86c9cf96b7aa49a87aaf8671ab969, type: 3}
-  parent: {fileID: 0}
+  parentGameObject: {fileID: 0}
   hitPoints: 5
   hitScore: 10
+--- !u!65 &8077873625330220367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625087854901906479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1566567, y: 2.955462, z: 10.742561}
+  m_Center: {x: 0, y: -0.000011980534, z: 0}
 --- !u!1 &2174535649574748134
 GameObject:
   m_ObjectHideFlags: 0

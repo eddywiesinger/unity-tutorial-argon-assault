@@ -261,16 +261,25 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -3450329248772586731, guid: e1dcf894bb4a79f49afee96696dfb91e, type: 2}
     value: {fileID: 1818788956}
+  - key: {fileID: -4370102584404677803, guid: e1dcf894bb4a79f49afee96696dfb91e, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 20c20926b21a575429cfc042282856c5: {fileID: 1280997929}
+    - 17dc102f56c728249a3b20837324cfff: {fileID: 1464105979}
     - 8f1b48745156d7c4abcf16a8c702aafa: {fileID: 378611323}
     - 773beaad46e10124ca4c736c5d2c4cd0: {fileID: 1541194684}
+    - 236e593d74e549a45a4d145ee729cc8c: {fileID: 1464105979}
     - 93b3d60d856f42146804505c2ddfd6f3: {fileID: 435354415}
     - 338c6e1dee5ead347911c017b8aaf273: {fileID: 1280997929}
+    - dee0cc10f09a94a4cb8a0154725ae01e: {fileID: 1705662692}
+    - 36a0658fdc57e4747a48be85b693b2ef: {fileID: 1464105979}
     - 5dafbc79980f97149bcbe2e209db6795: {fileID: 1177845451}
     - 87c05e8f0651fec478708008fd4dd1cd: {fileID: 1177845451}
     - 059212567d2743146ba9afc98599f027: {fileID: 1767070208}
+    - 57ad57b4e2372194fa6598da44eed409: {fileID: 1464105979}
+    - 40a81eb45e06e5643b8cc21adc4cfca4: {fileID: 1464105979}
+    - 196b2ffb621fbc9439e0ee752b0ce0ff: {fileID: 1464105979}
 --- !u!4 &305165350
 Transform:
   m_ObjectHideFlags: 0
@@ -908,6 +917,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 434609114229359364, guid: ec280fe4430ac6646a54f4f3161835ca, type: 3}
   m_PrefabInstance: {fileID: 434609112950749486}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1464105979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8003196370984574156, guid: 1a686aaec9b080546b8d088fd0e1996b, type: 3}
+  m_PrefabInstance: {fileID: 9124443881230221462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541194684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1093,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1705662692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9124443879785640639, guid: 1a686aaec9b080546b8d088fd0e1996b, type: 3}
+  m_PrefabInstance: {fileID: 9124443881230221462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1748032755
 PrefabInstance:
   m_ObjectHideFlags: 0

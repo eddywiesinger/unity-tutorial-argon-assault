@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 5359618149165680831}
   - component: {fileID: 7891932752815144053}
   - component: {fileID: 219305223902573838}
+  - component: {fileID: 4106725207755832126}
   m_Layer: 0
   m_Name: Fuzzer
   m_TagString: Untagged
@@ -730,9 +731,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitVFX: {fileID: 3283942084272658810, guid: 3f0f6be197a7fbf4cadb9dcf2cfd6d5b, type: 3}
   deathVFX: {fileID: 3345770315677194374, guid: 24a86c9cf96b7aa49a87aaf8671ab969, type: 3}
-  parent: {fileID: 0}
+  parentGameObject: {fileID: 0}
   hitPoints: 2
   hitScore: 80
+--- !u!65 &4106725207755832126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8540297649398390176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.147294, y: 3.2459185, z: 10.599532}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8694886288883336151
 GameObject:
   m_ObjectHideFlags: 0
