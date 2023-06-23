@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float controlRollFactor = -25f;
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] [Range(0,1)] float shootCooldownTime = 0.06f; //ms
+    float passedTime = 0f;
+
     // Update is called once per frame
     void Update()
     {
@@ -75,6 +79,19 @@ public class PlayerController : MonoBehaviour
         {
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = isActive;
+        }
+        if (isActive)
+        {
+            passedTime += Time.deltaTime;
+            if (passedTime >= shootCooldownTime)
+            {
+                audioSource.Play();
+                passedTime = 0f;
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 

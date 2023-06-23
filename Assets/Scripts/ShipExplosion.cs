@@ -8,6 +8,8 @@ public class ShipExplosion : MonoBehaviour
     [SerializeField] GameObject[] shipFragments;
     [Header("Particle Effect")]
     [SerializeField] ParticleSystem explosionVFX;
+    [Header("Explosion Sound Effect")]
+    [SerializeField] AudioClip explosionSFX;
 
     private void Awake()
     {
@@ -21,5 +23,8 @@ public class ShipExplosion : MonoBehaviour
             shipFragment.GetComponent<FragmentExplosion>().enabled = true;
         }
         explosionVFX.Play();
+        AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.volume = 0.5f;
+        audioSource.PlayOneShot(explosionSFX);
     }
 }
